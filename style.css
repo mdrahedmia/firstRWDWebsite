@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF9800;
+}
+.logo{
+  padding: 10px;
+  font-weight: 400;
+  color: #fff;
+}
+menu{
+  padding: 10px;
+}
+menu a{
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  animation: 1s;
+}
+menu a:hover{
+  color: grey;
+}
+
+/* main section start from here */
+
+.main-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+.left-col{
+  flex: 60%;
+}
+.left-col img{
+  width: 80%;
+  height: 100%;
+}
+
+
+.right-col{
+  flex: 40%;
+}
+.right-col h1{
+  font-weight: 400;
+}
+
+
+.right-col button{
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  background: #FF9800;
+  display: inline;
+  margin-top: 50px;
+  margin-left: 10px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+.right-col button:nth-child(2){
+  background: transparent;
+  color: #555;
+  border: 2px solid #FF9800;
+  transition: 1s;
+}
+.right-col button:nth-child(2):hover{
+  background: #FF9800;
+  color: #555;
+}
+
+footer{
+  display: flex;
+  height: 100px;
+}
+.footer-text{
+  flex: 1;
+  background-image: linear-gradient(to right,#FF9800, #a46406);
+  padding: 10px;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.col-mod-2{
+  flex: 1;
+}
+.col-mod-3{
+  flex: 1;
+}
+.col-mod-4{
+  background-image: linear-gradient(to right,#FF9800, #a46406);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media{
+  
+}
+.social-media a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.social-media a i{
+  font-size: 30px;
+}
+
+.social-media a i:nth-child(1){
+  color: 	#4267B2;
+}
+.social-media a i:nth-child(2){
+  color: 	#1DA1F2;
+}
+.social-media a i:nth-child(3){
+  color: #bc2a8d;
+}
+
+
+/* responsive style start from here */ 
+@media screen and (max-width: 550px){
+  body{
+    
+  }
+  .logo{
+    text-align: center;
+  }
+  .heading{
+    display: block;
+  }
+  .heading menu a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+    padding: 20px 10px;
+  }
+  .heading menu a:nth-child(1){
+    border-top: 2px solid grey;
+  }
+  .main-section {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .right-col button{
+    width: 150px;
+  }
+  
+  .main-section .right-col{
+    margin-top: 40px;
+  }
+  footer{
+    display: block;
+  }
+  footer div{
+    min-height: 100px;
+    
+  }
+  .social-media{
+    padding-top: 20px;
+  }
+}
+
